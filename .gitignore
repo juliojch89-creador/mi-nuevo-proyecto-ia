@@ -1,6 +1,5 @@
 # No subir las miles de imágenes
-PetImages/
-tensorflow_datasets/
+
 
 # No subir archivos de entrenamiento local
 *.h5
