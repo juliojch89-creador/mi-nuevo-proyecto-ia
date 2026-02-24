@@ -1,0 +1,11 @@
+# No subir las miles de imágenes
+PetImages/
+tensorflow_datasets/
+
+# No subir archivos de entrenamiento local
+*.h5
+checkpoint/
+
+# No subir carpetas temporales de Python
+__pycache__/
+.ipynb_checkpoints/

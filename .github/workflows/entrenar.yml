@@ -1,0 +1,21 @@
+name: Entrenamiento IA Perros y Gatos
+on: [push] # Se activa cada vez que subes cambios a GitHub
+
+jobs:
+  entrenamiento:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar codigo del repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias necesarias
+        run: |
+          pip install tensorflow tensorflow-datasets
+          
+      - name: Iniciar entrenamiento
+        run: python index.py # Ejecuta tu archivo principal de entrenamiento
